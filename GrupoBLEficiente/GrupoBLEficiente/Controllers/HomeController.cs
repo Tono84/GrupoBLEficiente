@@ -1,4 +1,4 @@
-﻿using GrupoBLEficiente.Models;
+using GrupoBLEficiente.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 

@@ -1,7 +1,8 @@
 ﻿namespace GrupoBLEficiente.Models
 {
     public class CCSSDeductions
-    {
+    {   
+        
         public int IdCCSSDeduction { get; set; }
 
         public string Name { get; set; }

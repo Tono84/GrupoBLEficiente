@@ -55,7 +55,7 @@ namespace GrupoBLEficiente.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IdEmployee,Name,LastName,NationalId,Phone,Email,Password,AccruedVacations,BirthDate,JobTitle,MonthlySalary,FirstDay,Schedule,IdRol,Status,Description")] Employees employees)
         {
-            if (ModelState.IsValid)
+           if (ModelState.IsValid)
             {
                 _context.Add(employees);
                 await _context.SaveChangesAsync();

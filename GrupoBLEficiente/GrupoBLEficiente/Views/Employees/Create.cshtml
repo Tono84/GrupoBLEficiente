@@ -5,9 +5,9 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Registrar Empleado</h1>
+<h1>Crear Empleado</h1>
 
-<h4>Employees</h4>
+<h4></h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -38,16 +38,16 @@
                 <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
-            <div class="form-group">
+@*             <div class="form-group">
                 <label asp-for="Password" class="control-label"></label>
                 <input asp-for="Password" class="form-control" />
                 <span asp-validation-for="Password" class="text-danger"></span>
-            </div>
-            <div class="form-group">
+            </div> *@
+@*             <div class="form-group">
                 <label asp-for="AccruedVacations" class="control-label"></label>
                 <input asp-for="AccruedVacations" class="form-control" />
                 <span asp-validation-for="AccruedVacations" class="text-danger"></span>
-            </div>
+            </div> *@
             <div class="form-group">
                 <label asp-for="BirthDate" class="control-label"></label>
                 <input asp-for="BirthDate" class="form-control" />
@@ -73,32 +73,33 @@
                 <input asp-for="Schedule" class="form-control" />
                 <span asp-validation-for="Schedule" class="text-danger"></span>
             </div>
-            <div class="form-group">
+@*             <div class="form-group">
                 <label asp-for="IdRol" class="control-label"></label>
                 <input asp-for="IdRol" class="form-control" />
                 <span asp-validation-for="IdRol" class="text-danger"></span>
-            </div>
+            </div> *@
             <div class="form-group">
                 <label asp-for="Status" class="control-label"></label>
-                <input asp-for="Status" class="form-control" />
+                <input asp-for="Status" class="form-control" value="Activo" readonly/>
                 <span asp-validation-for="Status" class="text-danger"></span>
             </div>
-            <div class="form-group">
+@*             <div class="form-group">
                 <label asp-for="Description" class="control-label"></label>
                 <input asp-for="Description" class="form-control" />
                 <span asp-validation-for="Description" class="text-danger"></span>
-            </div>
+            </div> *@
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Crear" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Regresar a Lista de Empleados</a>
 </div>
 
-@section Scripts {
+@* @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+ *@

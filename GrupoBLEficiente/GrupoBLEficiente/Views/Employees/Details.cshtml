@@ -5,10 +5,10 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Details</h1>
+<h1>Detalles del Empleado</h1>
 
 <div>
-    <h4>Employees</h4>
+    <h4></h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -41,12 +41,12 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Email)
         </dd>
-        <dt class = "col-sm-2">
+@*         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Password)
-        </dt>
-        <dd class = "col-sm-10">
+        </dt> *@
+@*         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Password)
-        </dd>
+        </dd> *@
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.AccruedVacations)
         </dt>
@@ -104,6 +104,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.IdEmployee">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model?.IdEmployee">Editar</a> |
+    <a asp-action="Index">Regresar a la Lista de Empleados </a>
 </div>

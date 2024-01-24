@@ -9,23 +9,23 @@ using GrupoBLEficiente.Models;
 
 namespace GrupoBLEficiente.Controllers
 {
-    public class EmployeesController : Controller
+    public class AttendancesController : Controller
     {
         private readonly GBLContext _context;
 
-        public EmployeesController(GBLContext context)
+        public AttendancesController(GBLContext context)
         {
             _context = context;
         }
 
-        // GET: Employees
+        // GET: Attendances
         public async Task<IActionResult> Index()
         {
-            var gBLContext = _context.Employees.Include(a => a.Roles);
-            return View(await _context.Employees.ToListAsync());
+            var gBLContext = _context.Attendance.Include(a => a.Employees);
+            return View(await gBLContext.ToListAsync());
         }
 
-        // GET: Employees/Details/5
+        // GET: Attendances/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -33,42 +33,42 @@ namespace GrupoBLEficiente.Controllers
                 return NotFound();
             }
 
-            var employees = await _context.Employees
-                .Include(a => a.Roles)
-                .FirstOrDefaultAsync(m => m.IdEmployee == id);
-            if (employees == null)
+            var attendance = await _context.Attendance
+                .Include(a => a.Employees)
+                .FirstOrDefaultAsync(m => m.IdAttendance == id);
+            if (attendance == null)
             {
                 return NotFound();
             }
 
-            return View(employees);
+            return View(attendance);
         }
 
-        // GET: Employees/Create
+        // GET: Attendances/Create
         public IActionResult Create()
         {
-            ViewData["IdRol"] = new SelectList(_context.Roles, "IdRol", "Name");
+            ViewData["IdEmployee"] = new SelectList(_context.Employees, "IdEmployee", "Name");
             return View();
         }
 
-        // POST: Employees/Create
+        // POST: Attendances/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdEmployee,Name,LastName,NationalId,Phone,Email,Password,AccruedVacations,BirthDate,JobTitle,MonthlySalary,FirstDay,Schedule,IdRol,Status,Description")] Employees employees)
+        public async Task<IActionResult> Create([Bind("IdAttendance,IdEmployee,WorkDays,Absences,Vacations,PayPeriodStart,PayPeriodEnd,commissions,OnCallHours,Description")] Attendance attendance)
         {
-           if (ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                _context.Add(employees);
+                _context.Add(attendance);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdRol"] = new SelectList(_context.Roles, "IdRol", "Name");
-            return View(employees);
+            ViewData["IdEmployee"] = new SelectList(_context.Employees, "IdEmployee", "Name", attendance.IdEmployee);
+            return View(attendance);
         }
 
-        // GET: Employees/Edit/5
+        // GET: Attendances/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -76,23 +76,23 @@ namespace GrupoBLEficiente.Controllers
                 return NotFound();
             }
 
-            var employees = await _context.Employees.FindAsync(id);
-            if (employees == null)
+            var attendance = await _context.Attendance.FindAsync(id);
+            if (attendance == null)
             {
                 return NotFound();
             }
-            ViewData["IdRol"] = new SelectList(_context.Roles, "IdRol", "Name");
-            return View(employees);
+            ViewData["IdEmployee"] = new SelectList(_context.Employees, "IdEmployee", "Name", attendance.IdEmployee);
+            return View(attendance);
         }
 
-        // POST: Employees/Edit/5
+        // POST: Attendances/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdEmployee,Name,LastName,NationalId,Phone,Email,Password,AccruedVacations,BirthDate,JobTitle,MonthlySalary,FirstDay,Schedule,IdRol,Status,Description")] Employees employees)
+        public async Task<IActionResult> Edit(int id, [Bind("IdAttendance,IdEmployee,WorkDays,Absences,Vacations,PayPeriodStart,PayPeriodEnd,commissions,OnCallHours,Description")] Attendance attendance)
         {
-            if (id != employees.IdEmployee)
+            if (id != attendance.IdAttendance)
             {
                 return NotFound();
             }
@@ -101,12 +101,12 @@ namespace GrupoBLEficiente.Controllers
             {
                 try
                 {
-                    _context.Update(employees);
+                    _context.Update(attendance);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!EmployeesExists(employees.IdEmployee))
+                    if (!AttendanceExists(attendance.IdAttendance))
                     {
                         return NotFound();
                     }
@@ -117,11 +117,11 @@ namespace GrupoBLEficiente.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdRol"] = new SelectList(_context.Roles, "IdRol", "Name");
-            return View(employees);
+            ViewData["IdEmployee"] = new SelectList(_context.Employees, "IdEmployee", "Email", attendance.IdEmployee);
+            return View(attendance);
         }
 
-        // GET: Employees/Delete/5
+        // GET: Attendances/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -129,35 +129,35 @@ namespace GrupoBLEficiente.Controllers
                 return NotFound();
             }
 
-            var employees = await _context.Employees
-                .Include(a => a.Roles)
-                .FirstOrDefaultAsync(m => m.IdEmployee == id);
-            if (employees == null)
+            var attendance = await _context.Attendance
+                .Include(a => a.Employees)
+                .FirstOrDefaultAsync(m => m.IdAttendance == id);
+            if (attendance == null)
             {
                 return NotFound();
             }
 
-            return View(employees);
+            return View(attendance);
         }
 
-        // POST: Employees/Delete/5
+        // POST: Attendances/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var employees = await _context.Employees.FindAsync(id);
-            if (employees != null)
+            var attendance = await _context.Attendance.FindAsync(id);
+            if (attendance != null)
             {
-                _context.Employees.Remove(employees);
+                _context.Attendance.Remove(attendance);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool EmployeesExists(int id)
+        private bool AttendanceExists(int id)
         {
-            return _context.Employees.Any(e => e.IdEmployee == id);
+            return _context.Attendance.Any(e => e.IdAttendance == id);
         }
     }
 }

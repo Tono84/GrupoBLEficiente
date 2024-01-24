@@ -8,7 +8,7 @@ namespace GrupoBLEficiente.Models
         public int IdEmployee { get; set; }
 
         [Required(ErrorMessage = "El nombre es requerido")]
-        [Display(Name="Nombre")]
+        [Display(Name = "Nombre")]
         public string Name { get; set; }
 
         [Required(ErrorMessage = "El apellido es requerido")]
@@ -21,7 +21,7 @@ namespace GrupoBLEficiente.Models
 
         [Required(ErrorMessage = "El número de teléfono es requerido")]
         [Display(Name = "Número Teléfonico")]
-        public string Phone {  get; set; }
+        public string Phone { get; set; }
 
         [Required(ErrorMessage = "El correo es requerido")]
         [Display(Name = "Correo")]
@@ -53,7 +53,7 @@ namespace GrupoBLEficiente.Models
         public string? Schedule { get; set; }
 
         [Display(Name = "Rol")]
-        public int? IdRol {  get; set; }
+        public int? IdRol { get; set; }
 
         [Display(Name = "Estado")]
         public string? Status { get; set; }
@@ -61,5 +61,11 @@ namespace GrupoBLEficiente.Models
         [Display(Name = "Comentarios")]
         public string? Description { get; set; }
 
+
+        public Roles? Roles {get; set;}
+
+        public List<Attendance>? Attendance { get; set; }
+
+        public List<Paysheet> Paysheet { get; set; }   
     }
 }

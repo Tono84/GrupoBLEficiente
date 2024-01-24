@@ -1,8 +1,11 @@
+using GrupoBLEficiente.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddDbContext<GBLContext>(opciones => opciones.UseSqlServer(builder.Configuration.GetConnectionString("GBLContext")));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -22,6 +25,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Login}/{action=Login}/{id?}");
 
 app.Run();

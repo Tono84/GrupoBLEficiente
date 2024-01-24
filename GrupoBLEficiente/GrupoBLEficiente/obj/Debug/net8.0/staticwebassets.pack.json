@@ -749,6 +749,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficiente\\wwwroot\\img\\Gutpobl.png",
+      "PackagePath": "staticwebassets\\img\\Gutpobl.png"
+    },
+    {
+      "Id": "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficiente\\wwwroot\\img\\Logo1.png",
+      "PackagePath": "staticwebassets\\img\\Logo1.png"
+    },
+    {
       "Id": "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficiente\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

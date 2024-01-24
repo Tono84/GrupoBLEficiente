@@ -1,0 +1,63 @@
+﻿@model IEnumerable<GrupoBLEficiente.Models.Paysheet>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Comprobantes</h1>
+
+<p>
+    <a asp-action="Create">Crear Comprobante</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EmployeeFullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmployeeNationalId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PayPeriod)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.TotalPay)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.NetPay)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployeeFullName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployeeNationalId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PayPeriod)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalPay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NetPay)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdPaysheet">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdPaysheet">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdPaysheet">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

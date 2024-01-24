@@ -42,10 +42,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
+        <a asp-controller="Home" asp-action="Index" class="nav-link">Home</a>
       </li>
     </ul>
 
@@ -175,10 +172,11 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a asp-controller="Home" asp-action="Index"class="brand-link">
       <img src="~/img/Logo1.png" alt="Grupo B.L Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">Eficiente</span>
     </a>
+
 
     <!-- Sidebar -->
     <div class="sidebar">
@@ -219,7 +217,7 @@
             </a>
           </li>
            <li class="nav-item">
-             <a asp-controller="Employees" asp-action="Index" class="nav-link">
+             <a asp-controller="Attendances" asp-action="Index" class="nav-link">
              <i class="nav-icon far fa-calendar-alt"></i>
              <p>
                Asistencia
@@ -228,7 +226,7 @@
              </a>
            </li>
           <li class="nav-item">
-             <a asp-controller="Employees" asp-action="Index" class="nav-link">
+             <a asp-controller="Paysheets" asp-action="Index" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
                 Comprobantes de Pago

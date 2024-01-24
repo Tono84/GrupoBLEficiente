@@ -16,7 +16,7 @@ namespace GrupoBLEficiente.Models
         public string Description { get; set; }
 
 
-     
+     public List<Employees>? Employees { get; set; }
 
     }
 }

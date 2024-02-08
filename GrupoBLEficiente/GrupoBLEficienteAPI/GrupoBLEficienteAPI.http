@@ -1,0 +1,6 @@
+@GrupoBLEficienteAPI_HostAddress = http://localhost:5151
+
+GET {{GrupoBLEficienteAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

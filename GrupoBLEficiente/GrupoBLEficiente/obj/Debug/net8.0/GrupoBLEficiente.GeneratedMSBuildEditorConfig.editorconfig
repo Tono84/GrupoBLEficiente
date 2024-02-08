@@ -118,6 +118,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5c2hlZXRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Reports/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Roles/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -144,6 +148,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/TaxDeductions/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGF4RGVkdWN0aW9uc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/TaxDeductions/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGF4RGVkdWN0aW9uc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/TaxDeductions/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGF4RGVkdWN0aW9uc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/TaxDeductions/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGF4RGVkdWN0aW9uc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/TaxDeductions/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGF4RGVkdWN0aW9uc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/_ViewImports.cshtml]

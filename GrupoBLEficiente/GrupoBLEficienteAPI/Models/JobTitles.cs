@@ -15,8 +15,10 @@ namespace GrupoBLEficienteAPI.Models
         public int IdJobTitle { get; set; }
 
         [Required]
+        [Display(Name = "Titulo de Trabajo")]
         public string Name { get; set; }
 
+        [Display(Name = "Descripción")]
         public string Description { get; set; }
 
         [JsonIgnore]

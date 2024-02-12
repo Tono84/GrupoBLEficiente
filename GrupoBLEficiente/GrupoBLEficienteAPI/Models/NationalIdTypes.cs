@@ -10,8 +10,10 @@ namespace GrupoBLEficienteAPI.Models
         public int Idtype { get; set; }
 
         [Required]
+        [Display(Name = "Tipo de Documento de Identificación")]
         public string Name { get; set; }
 
+        [Display(Name = "Descripción")]
         public string Description { get; set; }
 
         [JsonIgnore]

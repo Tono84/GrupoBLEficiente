@@ -21,8 +21,8 @@ namespace GrupoBLEficiente.Controllers
         // GET: Employees
         public async Task<IActionResult> Index()
         {
-            var gBLContext = _context.Employees.Include(a => a.Roles);
-            return View(await _context.Employees.ToListAsync());
+            var gBLContext = _context.Employees.Include(e => e.Roles);
+            return View(await gBLContext.ToListAsync());
         }
 
         // GET: Employees/Details/5
@@ -34,7 +34,7 @@ namespace GrupoBLEficiente.Controllers
             }
 
             var employees = await _context.Employees
-                .Include(a => a.Roles)
+                .Include(e => e.Roles)
                 .FirstOrDefaultAsync(m => m.IdEmployee == id);
             if (employees == null)
             {
@@ -47,24 +47,22 @@ namespace GrupoBLEficiente.Controllers
         // GET: Employees/Create
         public IActionResult Create()
         {
-            ViewData["IdRol"] = new SelectList(_context.Roles, "IdRol", "Name");
+            ViewData["IdRol"] = new SelectList(_context.Roles, "IdRol", "Description");
             return View();
         }
 
         // POST: Employees/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IdEmployee,Name,LastName,NationalId,Phone,Email,Password,AccruedVacations,BirthDate,JobTitle,MonthlySalary,FirstDay,Schedule,IdRol,Status,Description")] Employees employees)
         {
-           if (ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 _context.Add(employees);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdRol"] = new SelectList(_context.Roles, "IdRol", "Name");
+            ViewData["IdRol"] = new SelectList(_context.Roles, "IdRol", "Description", employees.IdRol);
             return View(employees);
         }
 
@@ -81,13 +79,12 @@ namespace GrupoBLEficiente.Controllers
             {
                 return NotFound();
             }
-            ViewData["IdRol"] = new SelectList(_context.Roles, "IdRol", "Name");
+            ViewData["IdRol"] = new SelectList(_context.Roles, "IdRol", "Description", employees.IdRol);
             return View(employees);
         }
 
         // POST: Employees/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("IdEmployee,Name,LastName,NationalId,Phone,Email,Password,AccruedVacations,BirthDate,JobTitle,MonthlySalary,FirstDay,Schedule,IdRol,Status,Description")] Employees employees)
@@ -117,7 +114,7 @@ namespace GrupoBLEficiente.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdRol"] = new SelectList(_context.Roles, "IdRol", "Name");
+            ViewData["IdRol"] = new SelectList(_context.Roles, "IdRol", "Description", employees.IdRol);
             return View(employees);
         }
 
@@ -130,7 +127,7 @@ namespace GrupoBLEficiente.Controllers
             }
 
             var employees = await _context.Employees
-                .Include(a => a.Roles)
+                .Include(e => e.Roles)
                 .FirstOrDefaultAsync(m => m.IdEmployee == id);
             if (employees == null)
             {

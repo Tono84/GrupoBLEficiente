@@ -5,10 +5,10 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Detalles del Empleado</h1>
+<h1>Details</h1>
 
 <div>
-    <h4></h4>
+    <h4>Employees</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -41,12 +41,12 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Email)
         </dd>
-@*         <dt class = "col-sm-2">
+        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Password)
-        </dt> *@
-@*         <dd class = "col-sm-10">
+        </dt>
+        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Password)
-        </dd> *@
+        </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.AccruedVacations)
         </dt>
@@ -84,12 +84,6 @@
             @Html.DisplayFor(model => model.Schedule)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.IdRol)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.IdRol)
-        </dd>
-        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Status)
         </dt>
         <dd class = "col-sm-10">
@@ -101,9 +95,15 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Description)
         </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Roles)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Roles.Description)
+        </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.IdEmployee">Editar</a> |
-    <a asp-action="Index">Regresar a la Lista de Empleados </a>
+    <a asp-action="Edit" asp-route-id="@Model?.IdEmployee">Edit</a> |
+    <a asp-action="Index">Back to List</a>
 </div>

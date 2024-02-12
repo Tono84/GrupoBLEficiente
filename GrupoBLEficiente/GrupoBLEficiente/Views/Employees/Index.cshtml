@@ -5,10 +5,10 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Empleados</h1>
+<h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Crear Empleado</a>
+    <a asp-action="Create">Create New</a>
 </p>
 <table class="table">
     <thead>
@@ -23,10 +23,40 @@
                 @Html.DisplayNameFor(model => model.NationalId)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AccruedVacations)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BirthDate)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.JobTitle)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.MonthlySalary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstDay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Schedule)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Roles)
             </th>
             <th></th>
         </tr>
@@ -44,17 +74,45 @@
                 @Html.DisplayFor(modelItem => item.NationalId)
             </td>
             <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AccruedVacations)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BirthDate)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.JobTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MonthlySalary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstDay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Schedule)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Status)
             </td>
             <td>
-                    <div class="btn-group">
-                        <a asp-action="Edit" asp-route-id="@item.IdEmployee" class="btn  btn-success">Editar</a>
-                        <a asp-action="Details" asp-route-id="@item.IdEmployee" class="btn btn-info">Detalles</a>
-                        <a asp-action="Delete" asp-route-id="@item.IdEmployee" class="btn btn-danger">Borrar</a>
-                    </div>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Roles.Description)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdEmployee">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdEmployee">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdEmployee">Delete</a>
             </td>
         </tr>
 }

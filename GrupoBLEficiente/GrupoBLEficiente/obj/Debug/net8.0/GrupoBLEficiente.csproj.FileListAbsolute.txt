@@ -9,6 +9,10 @@ C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficient
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\bin\Debug\net8.0\Humanizer.dll
+C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\bin\Debug\net8.0\System.Web.Cors.dll
+C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\bin\Debug\net8.0\System.Net.Http.Formatting.dll
+C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\bin\Debug\net8.0\System.Web.Http.dll
+C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\bin\Debug\net8.0\System.Web.Http.Cors.dll
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
@@ -61,6 +65,7 @@ C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficient
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\bin\Debug\net8.0\Mono.TextTemplating.dll
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\bin\Debug\net8.0\NuGet.Common.dll
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\bin\Debug\net8.0\NuGet.Configuration.dll
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\bin\Debug\net8.0\NuGet.DependencyResolver.Core.dll

@@ -1,8 +1,7 @@
-﻿using Swashbuckle.AspNetCore.Annotations;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
-namespace GrupoBLEficienteAPI.Models
+namespace GrupoBLEficiente.Models
 {
     public class NationalIdTypes
     {

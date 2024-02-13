@@ -1,13 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore.SqlServer.Query.Internal;
-using System.ComponentModel.DataAnnotations;
-using GrupoBLEficienteAPI.Models;
+﻿using System.ComponentModel.DataAnnotations;
+using GrupoBLEficiente.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.OpenApi;
-using Microsoft.AspNetCore.Http.HttpResults;
-using Swashbuckle.AspNetCore.Annotations;
 using System.Text.Json.Serialization;
 
-namespace GrupoBLEficienteAPI.Models
+namespace GrupoBLEficiente.Models
 {
     public class JobTitles
     {

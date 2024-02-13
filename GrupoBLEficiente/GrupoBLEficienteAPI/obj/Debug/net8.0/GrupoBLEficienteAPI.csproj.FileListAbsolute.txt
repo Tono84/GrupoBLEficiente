@@ -72,6 +72,7 @@ C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficient
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\bin\Debug\net8.0\NuGet.ProjectModel.dll
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\bin\Debug\net8.0\NuGet.Protocol.dll
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\bin\Debug\net8.0\NuGet.Versioning.dll
+C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -262,4 +263,3 @@ C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficient
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\obj\Debug\net8.0\GrupoBLEficienteAPI.pdb
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\obj\Debug\net8.0\GrupoBLEficienteAPI.genruntimeconfig.cache
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\obj\Debug\net8.0\ref\GrupoBLEficienteAPI.dll
-C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll

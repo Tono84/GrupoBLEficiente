@@ -9,51 +9,52 @@ namespace GrupoBLEficienteAPI.Models
         [Key]
         public int IdEmployee { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "El nombre es requerido")]
         [Display(Name = "Nombre")]
         public string Name { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Los apellidos son requeridos")]
         [Display(Name = "Apellidos")]
         public string LastName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "El de tipo de documento es requerido")]
         [Display(Name = "Tipo de Documento de Identificación")]
         public int IdType { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "El número de documento es requerido")]
         [Display(Name = "Número de Documento de Identificación")]
         public string NationalId { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "La fecha es requerida")]
         [Display(Name = "Fecha de Nacimiento")]
         public DateOnly BirthDate { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "La fecha de inicio es requerida")]
         [Display(Name = "Fecha de Inicio")]
         public DateOnly HireDate { get; set; }
 
-        [Required]
-        [Display(Name = "Correo Electr'onico")]
+        [Required(ErrorMessage = "El correo electrónico requerido")]
+        [EmailAddress(ErrorMessage ="Utilice el formato de correo electrónico")]
+        [Display(Name = "Correo Electrónico")]
         public string Email { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "El número teléfonico es requerido")]
         [Display(Name = "Número Teléfonico")]
         public string Phone { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "La dirección es requerida")]
         [Display(Name = "Dirección Físisca")]
         public string Address { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "El salario es requerido")]
         [Display(Name = "Salario Bruto")]
         public decimal MonthlyGrossSalary { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "El titulo de trabajo es requerido")]
         [Display(Name = "Titulo de Trabajo")]
         public int IdJobTitle { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "El estado es requerido")]
         [Display(Name = "Estado")]
         public string status { get; set; }
 

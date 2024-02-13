@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GrupoBLEficienteAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+934dc76081a890980ee75bff52ced3e5f8a06add")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+984ccaa89c728cf332c1d8ac7a9396d52d8a9198")]
 [assembly: System.Reflection.AssemblyProductAttribute("GrupoBLEficienteAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GrupoBLEficienteAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

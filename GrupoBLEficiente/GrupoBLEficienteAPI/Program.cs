@@ -38,6 +38,9 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast")
 .WithOpenApi();
+//app.UseHttpsRedirection();
+
+//app.UseAuthorization();
 app.MapControllers();
 
 app.Run();

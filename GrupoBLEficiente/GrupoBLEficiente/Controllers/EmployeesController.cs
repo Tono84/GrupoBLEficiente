@@ -35,28 +35,30 @@ namespace GrupoBLEficiente.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            HttpResponseMessage response = _client.GetAsync(_client.BaseAddress + "/Employees").Result;
             List<Employees> employees = new List<Employees>();
-            List<JobTitles> jobTitles = new List<JobTitles>(); 
+            HttpResponseMessage response = _client.GetAsync(_client.BaseAddress + "/Employees").Result;
 
-            
-        
             if (response.IsSuccessStatusCode)
             {
-                
                 string data =response.Content.ReadAsStringAsync().Result;
                 employees = JsonConvert.DeserializeObject<List<Employees>>(data);
             }
-            HttpResponseMessage jobTitlesResponse = _client.GetAsync(_client.BaseAddress + "/JobTitles").Result;
-
-            if (jobTitlesResponse.IsSuccessStatusCode)
-            {
-                string jobTitlesData = jobTitlesResponse.Content.ReadAsStringAsync().Result;
-                jobTitles = JsonConvert.DeserializeObject<List<JobTitles>>(jobTitlesData);
-            }
-
-            ViewBag.JobTitles = new SelectList(jobTitles, "Id", "Name");
             return View(employees);
+        }
+
+        [HttpGet]
+        public IActionResult Details(int id)
+        {
+            {
+                Employees employees = new Employees();
+                HttpResponseMessage response = _client.GetAsync($"{_client.BaseAddress}/Employees/{id}").Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    string data = response.Content.ReadAsStringAsync().Result;
+                    employees = JsonConvert.DeserializeObject<Employees>(data);
+                }
+                return View(employees);
+            }
         }
 
         [HttpGet]

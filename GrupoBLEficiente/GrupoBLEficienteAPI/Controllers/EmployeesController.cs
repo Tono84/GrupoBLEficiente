@@ -24,9 +24,7 @@ namespace GrupoBLEficienteAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Employees>>> GetEmployees()
         {
-            var employees = await _context.Employees.Include(e => e.JobTitles).ToListAsync();
-
-            return (employees);
+            return await _context.Employees.ToListAsync();
         }
 
         // GET: api/Employees/5

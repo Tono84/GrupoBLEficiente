@@ -5,10 +5,8 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
-
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Crear Empleado</a>
 </p>
 <table class="table">
     <thead>
@@ -20,99 +18,82 @@
                 @Html.DisplayNameFor(model => model.LastName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.NationalId)
+                @Html.DisplayNameFor(model => model.IdType)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Phone)
+                @Html.DisplayNameFor(model => model.NationalId)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Email)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Password)
+                @Html.DisplayNameFor(model => model.Phone)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.AccruedVacations)
+                @Html.DisplayNameFor(model => model.Address)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.BirthDate)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.JobTitle)
+                @Html.DisplayNameFor(model => model.HireDate)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.MonthlySalary)
+                @Html.DisplayNameFor(model => model.MonthlyGrossSalary)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.FirstDay)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Schedule)
+                @Html.DisplayNameFor(model => model.IdJobTitle)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Status)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Roles)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NationalId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Phone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BirthDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HireDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MonthlyGrossSalary)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdJobTitle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LastName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NationalId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Phone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Password)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AccruedVacations)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BirthDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.JobTitle)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MonthlySalary)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstDay)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Schedule)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Status)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Roles.Description)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdEmployee">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdEmployee">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdEmployee">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.IdEmployee">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdEmployee">Detalles</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdEmployee">Borrar</a>
             </td>
         </tr>
 }

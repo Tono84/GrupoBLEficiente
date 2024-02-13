@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficienteAPI\\GrupoBLEficienteAPI.csproj": {}
+    "C:\\Users\\serra\\Source\\Repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficienteAPI\\GrupoBLEficienteAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficienteAPI\\GrupoBLEficienteAPI.csproj": {
+    "C:\\Users\\serra\\Source\\Repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficienteAPI\\GrupoBLEficienteAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficienteAPI\\GrupoBLEficienteAPI.csproj",
+        "projectUniqueName": "C:\\Users\\serra\\Source\\Repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficienteAPI\\GrupoBLEficienteAPI.csproj",
         "projectName": "GrupoBLEficienteAPI",
-        "projectPath": "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficienteAPI\\GrupoBLEficienteAPI.csproj",
-        "packagesPath": "C:\\Users\\joses\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficienteAPI\\obj\\",
+        "projectPath": "C:\\Users\\serra\\Source\\Repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficienteAPI\\GrupoBLEficienteAPI.csproj",
+        "packagesPath": "C:\\Users\\serra\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\serra\\Source\\Repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficienteAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\joses\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\serra\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

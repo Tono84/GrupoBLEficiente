@@ -17,167 +17,167 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GrupoBLEficiente
 build_property.RootNamespace = GrupoBLEficiente
-build_property.ProjectDir = C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\
+build_property.ProjectDir = C:\Users\serra\Source\Repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente
+build_property.MSBuildProjectDirectory = C:\Users\serra\Source\Repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Attendances/Create.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Attendances/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0ZW5kYW5jZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Attendances/Delete.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Attendances/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0ZW5kYW5jZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Attendances/Details.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Attendances/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0ZW5kYW5jZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Attendances/Edit.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Attendances/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0ZW5kYW5jZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Attendances/Index.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Attendances/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0ZW5kYW5jZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/CCSSDeductions/Create.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/CCSSDeductions/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ0NTU0RlZHVjdGlvbnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/CCSSDeductions/Delete.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/CCSSDeductions/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ0NTU0RlZHVjdGlvbnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/CCSSDeductions/Details.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/CCSSDeductions/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ0NTU0RlZHVjdGlvbnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/CCSSDeductions/Edit.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/CCSSDeductions/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ0NTU0RlZHVjdGlvbnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/CCSSDeductions/Index.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/CCSSDeductions/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ0NTU0RlZHVjdGlvbnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Employees/Create.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Employees/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Employees/Delete.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Employees/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Employees/Details.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Employees/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Employees/Edit.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Employees/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Employees/Index.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Employees/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Home/Index.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Home/Privacy.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Login/Login.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Paysheets/Create.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Paysheets/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5c2hlZXRzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Paysheets/Delete.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Paysheets/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5c2hlZXRzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Paysheets/Details.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Paysheets/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5c2hlZXRzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Paysheets/Edit.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Paysheets/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5c2hlZXRzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Paysheets/Index.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Paysheets/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5c2hlZXRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Reports/Index.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Reports/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Roles/Create.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Roles/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Roles/Delete.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Roles/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Roles/Details.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Roles/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Roles/Edit.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Roles/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Roles/Index.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Roles/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Shared/Error.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/TaxDeductions/Create.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/TaxDeductions/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGF4RGVkdWN0aW9uc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/TaxDeductions/Delete.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/TaxDeductions/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGF4RGVkdWN0aW9uc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/TaxDeductions/Details.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/TaxDeductions/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGF4RGVkdWN0aW9uc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/TaxDeductions/Edit.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/TaxDeductions/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGF4RGVkdWN0aW9uc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/TaxDeductions/Index.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/TaxDeductions/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGF4RGVkdWN0aW9uc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/_ViewImports.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/_ViewStart.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joses/OneDrive/Documentos/source/repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Shared/_Layout.cshtml]
+[C:/Users/serra/Source/Repos/GrupoBLEficiente/GrupoBLEficiente/GrupoBLEficiente/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-fvuo1v28vr

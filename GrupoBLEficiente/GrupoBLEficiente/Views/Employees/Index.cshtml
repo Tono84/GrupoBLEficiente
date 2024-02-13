@@ -18,7 +18,7 @@
                 @Html.DisplayNameFor(model => model.LastName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdType)
+                @Html.DisplayNameFor(model => model.NationalIdTypes.Name)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.NationalId)
@@ -42,7 +42,7 @@
                 @Html.DisplayNameFor(model => model.MonthlyGrossSalary)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdJobTitle)
+                @Html.DisplayNameFor(model => model.JobTitles.Name)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Status)
@@ -64,7 +64,7 @@
                     @Html.DisplayFor(modelItem => item.IdType)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.NationalId)
+                    @Html.DisplayFor(modelItem => item.NationalIdTypes.Name)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Email)
@@ -85,7 +85,7 @@
                     @Html.DisplayFor(modelItem => item.MonthlyGrossSalary)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.IdJobTitle)
+                    @Html.DisplayFor(modelItem => item.JobTitles.Name)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Status)

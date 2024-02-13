@@ -348,3 +348,7 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+GrupoBLEficiente/GrupoBLEficiente/obj/Debug/net8.0/GrupoBLEficiente.AssemblyInfoInputs.cache
+GrupoBLEficiente/GrupoBLEficienteAPI/obj/Debug/net8.0/GrupoBLEficienteAPI.AssemblyInfo.cs
+GrupoBLEficiente/GrupoBLEficienteAPI/obj/Debug/net8.0/GrupoBLEficienteAPI.AssemblyInfoInputs.cache
+GrupoBLEficiente/GrupoBLEficienteAPI/obj/Debug/net8.0/GrupoBLEficienteAPI.AssemblyInfoInputs.cache

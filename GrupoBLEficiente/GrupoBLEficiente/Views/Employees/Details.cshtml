@@ -5,10 +5,13 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Details</h1>
-
 <div>
-    <h4>Employees</h4>
+<div class="card">
+    <div class="card-header">
+            <h3 class="card-title">Detalles del Empleado</h3>
+        </div>
+        <div ="card-body">
+            
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
@@ -87,6 +90,8 @@
 
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.IdEmployee">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model?.IdEmployee">Editar</a> |
+    <a asp-action="Index">Regresar a lista</a>
 </div>
+</div>
+

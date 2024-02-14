@@ -22,7 +22,7 @@ namespace GrupoBLEficiente.Models
         public int IdType { get; set; }
 
         [Required(ErrorMessage = "El número de documento es requerido")]
-        [Display(Name = "Número de Documento de Identificación")]
+        [Display(Name = "Número de Identificación")]
         public string NationalId { get; set; }
 
         [Required(ErrorMessage = "La fecha es requerida")]

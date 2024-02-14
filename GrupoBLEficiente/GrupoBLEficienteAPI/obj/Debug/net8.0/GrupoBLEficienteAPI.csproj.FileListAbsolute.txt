@@ -257,9 +257,9 @@ C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficient
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.GrupoBLEficienteAPI.props
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\obj\Debug\net8.0\scopedcss\bundle\GrupoBLEficienteAPI.styles.css
-C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\obj\Debug\net8.0\GrupoBLEficienteAPI.csproj.CopyComplete
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\obj\Debug\net8.0\GrupoBLEficienteAPI.dll
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\obj\Debug\net8.0\refint\GrupoBLEficienteAPI.dll
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\obj\Debug\net8.0\GrupoBLEficienteAPI.pdb
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\obj\Debug\net8.0\GrupoBLEficienteAPI.genruntimeconfig.cache
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\obj\Debug\net8.0\ref\GrupoBLEficienteAPI.dll
+C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\obj\Debug\net8.0\GrupoBLE.1A0D8CE1.Up2Date

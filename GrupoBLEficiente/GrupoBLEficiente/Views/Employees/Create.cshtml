@@ -4,9 +4,10 @@
     ViewData["Title"] = "Create";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<h1>Registrar Empleado</h1>
-
+<div class="card">
+    <div class="card-headr">
+<h3>Registrar Empleado</h3>
+    </div>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -48,6 +49,16 @@
                 <span asp-validation-for="Address" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label>@Html.DisplayNameFor(model => model.BirthDate)</label>
+                <input asp-for="BirthDate" class="form-control" />
+                <span asp-validation-for="BirthDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label>@Html.DisplayNameFor(model => model.HireDate)</label>
+                <input asp-for="HireDate" class="form-control" />
+                <span asp-validation-for="HireDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="MonthlyGrossSalary" class="control-label"></label>
                 <input asp-for="MonthlyGrossSalary" class="form-control" />
                 <span asp-validation-for="MonthlyGrossSalary" class="text-danger"></span>
@@ -68,7 +79,7 @@
         </form>
     </div>
 </div>
-
+</div>
 <div>
     <a asp-action="Index">Regresar a la lista</a>
 </div>

@@ -259,9 +259,9 @@ C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficient
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\obj\Debug\net8.0\scopedcss\bundle\GrupoBLEficiente.styles.css
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\obj\Debug\net8.0\scopedcss\projectbundle\GrupoBLEficiente.bundle.scp.css
-C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\obj\Debug\net8.0\GrupoBLEficiente.csproj.CopyComplete
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\obj\Debug\net8.0\GrupoBLEficiente.dll
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\obj\Debug\net8.0\refint\GrupoBLEficiente.dll
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\obj\Debug\net8.0\GrupoBLEficiente.pdb
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\obj\Debug\net8.0\GrupoBLEficiente.genruntimeconfig.cache
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\obj\Debug\net8.0\ref\GrupoBLEficiente.dll
+C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficiente\obj\Debug\net8.0\GrupoBLE.65205070.Up2Date

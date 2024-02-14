@@ -32,6 +32,7 @@ namespace GrupoBLEficiente.Controllers
             _client.BaseAddress = baseAddress;
         }
 
+
         [HttpGet]
         public IActionResult Index()
         {

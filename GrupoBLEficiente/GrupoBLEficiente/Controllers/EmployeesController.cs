@@ -1,19 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using GrupoBLEficiente.Models;
-using GrupoBLEficiente.Helpers;
-using System.Text.Json;
 using Newtonsoft.Json;
-using System.Reflection.Metadata.Ecma335;
-using System.Text;
-using System.Net.Http;
-
-
+using GrupoBLEficiente.Models;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace GrupoBLEficiente.Controllers
 {
@@ -32,58 +26,66 @@ namespace GrupoBLEficiente.Controllers
             _client.BaseAddress = baseAddress;
         }
 
-
         [HttpGet]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             List<Employees> employees = new List<Employees>();
             HttpResponseMessage response = _client.GetAsync(_client.BaseAddress + "/Employees").Result;
 
             if (response.IsSuccessStatusCode)
             {
-                string data =response.Content.ReadAsStringAsync().Result;
+                string data = await response.Content.ReadAsStringAsync();
                 employees = JsonConvert.DeserializeObject<List<Employees>>(data);
             }
+
             return View(employees);
         }
 
         [HttpGet]
-        public IActionResult Details(int id)
+        public async Task<IActionResult> Details(int id)
         {
-            {
-                Employees employees = new Employees();
-                HttpResponseMessage response = _client.GetAsync($"{_client.BaseAddress}/Employees/{id}").Result;
-                if (response.IsSuccessStatusCode)
-                {
-                    string data = response.Content.ReadAsStringAsync().Result;
-                    employees = JsonConvert.DeserializeObject<Employees>(data);
-                }
-                return View(employees);
-            }
-        }
-
-        [HttpGet]
-        public IActionResult Create()
-        {
-            return View();
-        }
-        [HttpPost]
-        public IActionResult Create(Employees employees)
-        {
-            string data = JsonConvert.SerializeObject(employees);
-            StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
-            HttpResponseMessage response = _client.PostAsync($"{_client.BaseAddress}/Employees", content).Result;
+            Employees employee = new Employees();
+            HttpResponseMessage response = _client.GetAsync($"{_client.BaseAddress}/Employees/{id}").Result;
 
             if (response.IsSuccessStatusCode)
             {
-                TempData["successMessage"] = "Nuevo Empleado Registrado";
-                return RedirectToAction("Index");
+                string data = await response.Content.ReadAsStringAsync();
+                employee = JsonConvert.DeserializeObject<Employees>(data);
             }
-            else
+
+            return View(employee);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Create()
+        {
+            var jobTitles = await GetJobTitles();
+            ViewBag.JobTitles = new SelectList(jobTitles, "IdJobTitle", "Name");
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(Employees employees)
+        {
+            if (ModelState.IsValid)
             {
-                TempData["errorMessage"] = "Error al intentar registrar el nuevo empleado";
-                return View();
-            }
+                var jobTitles = await GetJobTitles();
+                ViewBag.JobTitles = new SelectList(jobTitles, "IdJobTitle", "Name");
+                string data = JsonConvert.SerializeObject(employees);
+                StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
+                HttpResponseMessage response = _client.PostAsync($"{_client.BaseAddress}/Employees", content).Result;
+
+                if (response.IsSuccessStatusCode)
+                {
+                    TempData["successMessage"] = "Nuevo Empleado Registrado";
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    TempData["errorMessage"] = "Error al intentar registrar el nuevo empleado";
+                    return View();
+                }
+            }return View(employees);
         }
 
         [HttpGet]
@@ -142,7 +144,20 @@ namespace GrupoBLEficiente.Controllers
             }
         }
 
+        private async Task<List<JobTitles>> GetJobTitles()
+        {
+            List<JobTitles> jobTitles = new List<JobTitles>();
+            HttpResponseMessage response = _client.GetAsync(_client.BaseAddress + "/JobTitles").Result;
 
+            if (response.IsSuccessStatusCode)
+            {
+                string data = await response.Content.ReadAsStringAsync();
+                jobTitles = JsonConvert.DeserializeObject<List<JobTitles>>(data);
+            }
 
+            return jobTitles;
+        }
     }
+
 }
+

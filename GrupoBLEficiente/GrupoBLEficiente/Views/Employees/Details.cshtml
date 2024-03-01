@@ -13,7 +13,7 @@
         <div ="card-body">
             
     <hr />
-    <dl class="row">
+            <dl class="row" style="margin-left: 1%;">
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Name)
         </dt>
@@ -26,12 +26,12 @@
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.LastName)
         </dd>
-        <dt class="col-sm-2">
+@*         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.IdType)
-        </dt>
-        <dd class="col-sm-10">
+        </dt> *@
+@*         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.IdType)
-        </dd>
+        </dd> *@
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.NationalId)
         </dt>
@@ -74,12 +74,12 @@
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.MonthlyGrossSalary)
         </dd>
-        <dt class="col-sm-2">
+@*         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.IdJobTitle)
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.IdJobTitle)
-        </dd>
+        </dd> *@
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Status)
         </dt>
@@ -89,9 +89,8 @@
     </dl>
 
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.IdEmployee">Editar</a> |
-    <a asp-action="Index">Regresar a lista</a>
 </div>
-</div>
-
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model?.IdEmployee">Editar</a> |
+        <a asp-action="Index">Regresar a lista</a>
+    </div>

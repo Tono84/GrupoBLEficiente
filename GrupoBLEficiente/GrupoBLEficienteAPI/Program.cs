@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using GrupoBLEficienteAPI.Controllers;
+using GrupoBLEficienteAPI.Models;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +12,10 @@ builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<GrupoBLEficienteAPI.Models.GBLContext>(opciones => opciones.UseSqlServer(builder.Configuration.GetConnectionString("GBLContext")));
+//builder.Services.AddDbContext<IdContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("IdContext")));
+//builder.Services.AddAuthorization();
+//builder.Services.AddIdentityApiEndpoints<Users>().AddEntityFrameworkStores<IdContext>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

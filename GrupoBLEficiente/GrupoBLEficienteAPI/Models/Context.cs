@@ -45,7 +45,7 @@ namespace GrupoBLEficienteAPI.Models
 
             modelBuilder.Entity<NationalIdTypes>(NationalIdTypes =>
             {
-                NationalIdTypes.HasKey(x => x.Idtype);
+                NationalIdTypes.HasKey(x => x.IdType);
                 NationalIdTypes.Property(x => x.Name)
                 .IsRequired()
                 .HasMaxLength(200)

@@ -44,13 +44,37 @@ namespace GrupoBLEficiente.Controllers
         [HttpGet]
         public async Task<IActionResult> Details(int id)
         {
+
             Employees employee = new Employees();
             HttpResponseMessage response = _client.GetAsync($"{_client.BaseAddress}/Employees/{id}").Result;
 
             if (response.IsSuccessStatusCode)
             {
+                
                 string data = await response.Content.ReadAsStringAsync();
                 employee = JsonConvert.DeserializeObject<Employees>(data);
+                HttpResponseMessage jobTitleResponse = await _client.GetAsync($"{_client.BaseAddress}/JobTitles/{employee.IdJobTitle}");
+
+                if (jobTitleResponse.IsSuccessStatusCode)
+                {
+                    string jobTitleData = await jobTitleResponse.Content.ReadAsStringAsync();
+                    JobTitles jobTitle = JsonConvert.DeserializeObject<JobTitles>(jobTitleData);
+
+                    
+                    employee.JobTitles = jobTitle;
+                }
+
+                // Obtiene el tipo de Id por ID de empleado
+                HttpResponseMessage nationalIdTypeResponse = await _client.GetAsync($"{_client.BaseAddress}/NationalIdTypes/{employee.IdType}");
+
+                if (nationalIdTypeResponse.IsSuccessStatusCode)
+                {
+                    string nationalIdTypeData = await nationalIdTypeResponse.Content.ReadAsStringAsync();
+                    NationalIdTypes nationalIdType = JsonConvert.DeserializeObject<NationalIdTypes>(nationalIdTypeData);
+
+                    // Asignar el tipo de identificación nacional al empleado
+                    employee.NationalIdTypes = nationalIdType;
+                }
             }
 
             return View(employee);
@@ -59,6 +83,8 @@ namespace GrupoBLEficiente.Controllers
         [HttpGet]
         public async Task<IActionResult> Create()
         {
+            var nationalIdTypes = await GetNationalIdTypes();
+            ViewBag.NationalIdTypes = new SelectList(nationalIdTypes, "IdType", "Name");
             var jobTitles = await GetJobTitles();
             ViewBag.JobTitles = new SelectList(jobTitles, "IdJobTitle", "Name");
             return View();
@@ -69,6 +95,8 @@ namespace GrupoBLEficiente.Controllers
         {
             if (ModelState.IsValid)
             {
+                var nationalIdTypes = await GetNationalIdTypes();
+                ViewBag.NationalIdTypes = new SelectList(nationalIdTypes, "IdType", "Name");
                 var jobTitles = await GetJobTitles();
                 ViewBag.JobTitles = new SelectList(jobTitles, "IdJobTitle", "Name");
                 string data = JsonConvert.SerializeObject(employees);
@@ -89,8 +117,13 @@ namespace GrupoBLEficiente.Controllers
         }
 
         [HttpGet]
-        public IActionResult Edit(int id)
+        public async Task<IActionResult> Edit(int id)
         {
+            var nationalIdTypes = await GetNationalIdTypes();
+            ViewBag.NationalIdTypes = new SelectList(nationalIdTypes, "IdType", "Name");
+            var jobTitles = await GetJobTitles();
+            ViewBag.JobTitles = new SelectList(jobTitles, "IdJobTitle", "Name");
+
             Employees employees = new Employees();
             HttpResponseMessage response = _client.GetAsync($"{_client.BaseAddress}/Employees/{id}").Result;
             if (response.IsSuccessStatusCode)
@@ -102,8 +135,9 @@ namespace GrupoBLEficiente.Controllers
         }
 
         [HttpPost]
-        public IActionResult Edit(int id, Employees employees) 
+        public async Task<IActionResult> Edit(int id, Employees employees) 
         {
+
             string data = JsonConvert.SerializeObject(employees);
             StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
             HttpResponseMessage response = _client.PutAsync($"{_client.BaseAddress}/Employees/{id}", content).Result; 
@@ -112,6 +146,11 @@ namespace GrupoBLEficiente.Controllers
                 TempData["successMessage"] = "Empleado Editado Exitosamente";
                 return RedirectToAction("Index");
             }
+            var nationalIdTypesTask = GetNationalIdTypes();
+            var jobTitlesTask = GetJobTitles();
+            await Task.WhenAll(nationalIdTypesTask, jobTitlesTask);
+            ViewBag.NationalIdTypes = new SelectList(nationalIdTypesTask.Result, "IdType", "Name");
+            ViewBag.JobTitles = new SelectList(jobTitlesTask.Result, "IdJobTitle", "Name");
             return View(employees);
         }
 
@@ -143,7 +182,19 @@ namespace GrupoBLEficiente.Controllers
                 return RedirectToAction("Index");
             }
         }
+        private async Task<List<NationalIdTypes>> GetNationalIdTypes()
+        {
+            List<NationalIdTypes> nationalIdTypes = new List<NationalIdTypes>();
+            HttpResponseMessage response = _client.GetAsync(_client.BaseAddress + "/NationalIdTypes").Result;
 
+            if (response.IsSuccessStatusCode)
+            {
+                string data = await response.Content.ReadAsStringAsync();
+                nationalIdTypes = JsonConvert.DeserializeObject<List<NationalIdTypes>>(data);
+            }
+
+            return nationalIdTypes;
+        }
         private async Task<List<JobTitles>> GetJobTitles()
         {
             List<JobTitles> jobTitles = new List<JobTitles>();
@@ -157,6 +208,7 @@ namespace GrupoBLEficiente.Controllers
 
             return jobTitles;
         }
+
     }
 
 }

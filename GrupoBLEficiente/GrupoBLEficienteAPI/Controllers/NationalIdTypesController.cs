@@ -45,7 +45,7 @@ namespace GrupoBLEficienteAPI.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutNationalIdTypes(int id, NationalIdTypes nationalIdTypes)
         {
-            if (id != nationalIdTypes.Idtype)
+            if (id != nationalIdTypes.IdType)
             {
                 return BadRequest();
             }
@@ -78,7 +78,7 @@ namespace GrupoBLEficienteAPI.Controllers
             _context.NationalIdTypes.Add(nationalIdTypes);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetNationalIdTypes", new { id = nationalIdTypes.Idtype }, nationalIdTypes);
+            return CreatedAtAction("GetNationalIdTypes", new { id = nationalIdTypes.IdType }, nationalIdTypes);
         }
 
         // DELETE: api/NationalIdTypes/5
@@ -99,7 +99,7 @@ namespace GrupoBLEficienteAPI.Controllers
 
         private bool NationalIdTypesExists(int id)
         {
-            return _context.NationalIdTypes.Any(e => e.Idtype == id);
+            return _context.NationalIdTypes.Any(e => e.IdType == id);
         }
     }
 }

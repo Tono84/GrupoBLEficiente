@@ -26,11 +26,11 @@
                 <input asp-for="LastName" class="form-control" />
                 <span asp-validation-for="LastName" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label>@Html.DisplayNameFor(model => model.IdType)</label>
-                <input asp-for="IdType" class="form-control" />
-                <span asp-validation-for="IdType" class="text-danger"></span>
-            </div>
+                <div class="form-group">
+                    <label asp-for="IdType" class="control-label"></label>
+                    <select asp-for="IdType" class="form-control" asp-items="@ViewBag.NationalIdTypes"></select>
+                    <span asp-validation-for="IdType" class="text-danger"></span>
+                </div>
             <div class="form-group">
                 <label>@Html.DisplayNameFor(model => model.NationalId)</label>
                 <input asp-for="NationalId" class="form-control" />
@@ -66,11 +66,11 @@
                 <input asp-for="MonthlyGrossSalary" class="form-control" />
                 <span asp-validation-for="MonthlyGrossSalary" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label>@Html.DisplayNameFor(model => model.IdJobTitle)</label>
-                <input asp-for="IdJobTitle" class="form-control" />
-                <span asp-validation-for="IdJobTitle" class="text-danger"></span>
-            </div>
+                <div class="form-group">
+                    <label asp-for="IdJobTitle" class="control-label"></label>
+                    <select asp-for="IdJobTitle" class="form-control" asp-items="@ViewBag.JobTitles"></select>
+                    <span asp-validation-for="IdJobTitle" class="text-danger"></span>
+                </div>
             <div class="form-group">
                 <label>@Html.DisplayNameFor(model => model.Status)</label>
                 <input asp-for="Status" class="form-control" />

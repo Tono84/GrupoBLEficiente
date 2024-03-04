@@ -9,6 +9,7 @@ C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficient
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\bin\Debug\net8.0\Humanizer.dll
+C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
 C:\Users\joses\OneDrive\Documentos\source\repos\GrupoBLEficiente\GrupoBLEficiente\GrupoBLEficienteAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll

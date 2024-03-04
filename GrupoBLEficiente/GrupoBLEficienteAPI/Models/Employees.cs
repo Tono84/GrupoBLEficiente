@@ -23,20 +23,23 @@ namespace GrupoBLEficienteAPI.Models
         public int IdType { get; set; }
 
         [Required(ErrorMessage = "El número de documento es requerido")]
-        [Display(Name = "Número de Documento de Identificación")]
+        [Display(Name = "Número de Identificación")]
         public string NationalId { get; set; }
 
-        [DateFormatValidation(ErrorMessage = "El formato de la fecha de nacimiento debe ser dd/MM/yyyy.")]
         [Required(ErrorMessage = "La fecha es requerida")]
         [Display(Name = "Fecha de Nacimiento")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd-MM-yyyy}")]
         public DateOnly BirthDate { get; set; }
 
         [Required(ErrorMessage = "La fecha de inicio es requerida")]
         [Display(Name = "Fecha de Inicio")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd-MM-yyyy}")]
         public DateOnly HireDate { get; set; }
 
         [Required(ErrorMessage = "El correo electrónico requerido")]
-        [EmailAddress(ErrorMessage ="Utilice el formato de correo electrónico")]
+        [EmailAddress(ErrorMessage = "Utilice el formato de correo electrónico")]
         [Display(Name = "Correo Electrónico")]
         public string Email { get; set; }
 
@@ -45,11 +48,12 @@ namespace GrupoBLEficienteAPI.Models
         public string Phone { get; set; }
 
         [Required(ErrorMessage = "La dirección es requerida")]
-        [Display(Name = "Dirección Físisca")]
+        [Display(Name = "Dirección Física")]
         public string Address { get; set; }
 
         [Required(ErrorMessage = "El salario es requerido")]
         [Display(Name = "Salario Bruto")]
+        [RegularExpression("(^[0-9]+$)", ErrorMessage = "Solo se permiten números")]
         public decimal MonthlyGrossSalary { get; set; }
 
         [Required(ErrorMessage = "El titulo de trabajo es requerido")]
@@ -58,7 +62,7 @@ namespace GrupoBLEficienteAPI.Models
 
         [Required(ErrorMessage = "El estado es requerido")]
         [Display(Name = "Estado")]
-        public string status { get; set; }
+        public string Status { get; set; }
 
         [JsonIgnore]
         public NationalIdTypes? NationalIdTypes { get; set; }
@@ -66,8 +70,8 @@ namespace GrupoBLEficienteAPI.Models
         public JobTitles? JobTitles { get; set; }
     }
 
-
-    public class DateFormatValidationAttribute : ValidationAttribute
+}
+public class DateFormatValidationAttribute : ValidationAttribute
     {
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
@@ -102,4 +106,3 @@ namespace GrupoBLEficienteAPI.Models
     }
 
 
-}

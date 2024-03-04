@@ -1,5 +1,8 @@
 ﻿
+using Microsoft.SqlServer.Server;
+using Newtonsoft.Json.Linq;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
 namespace GrupoBLEficiente.Models
@@ -27,10 +30,14 @@ namespace GrupoBLEficiente.Models
 
         [Required(ErrorMessage = "La fecha es requerida")]
         [Display(Name = "Fecha de Nacimiento")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd-MM-yyyy}")]
         public DateOnly BirthDate { get; set; }
 
         [Required(ErrorMessage = "La fecha de inicio es requerida")]
         [Display(Name = "Fecha de Inicio")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd-MM-yyyy}")]
         public DateOnly HireDate { get; set; }
 
         [Required(ErrorMessage = "El correo electrónico requerido")]
@@ -46,8 +53,8 @@ namespace GrupoBLEficiente.Models
         [Display(Name = "Dirección Física")]
         public string Address { get; set; }
 
-        [Required(ErrorMessage = "El salario es requerido")]
-        [Display(Name = "Salario Bruto")]
+        [DataType(DataType.Currency)]
+        [Column(TypeName = "decimal(18, 2)")]
         public decimal MonthlyGrossSalary { get; set; }
 
         [Required(ErrorMessage = "El titulo de trabajo es requerido")]

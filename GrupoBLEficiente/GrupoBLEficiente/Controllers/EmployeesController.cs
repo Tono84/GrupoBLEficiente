@@ -90,21 +90,45 @@ namespace GrupoBLEficiente.Controllers
             return View();
         }
 
+        //[HttpPost]
+        //public async Task<IActionResult> Create(Employees employees)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        var nationalIdTypes = await GetNationalIdTypes();
+        //        ViewBag.NationalIdTypes = new SelectList(nationalIdTypes, "IdType", "Name");
+        //        var jobTitles = await GetJobTitles();
+        //        ViewBag.JobTitles = new SelectList(jobTitles, "IdJobTitle", "Name");
+        //        string data = JsonConvert.SerializeObject(employees);
+        //        StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
+        //        HttpResponseMessage response = _client.PostAsync($"{_client.BaseAddress}/Employees", content).Result;
+
+        //        if (response.IsSuccessStatusCode)
+        //        {
+        //            TempData["successMessage"] = "Nuevo Empleado Registrado";
+        //            return RedirectToAction("Index");
+        //        }
+        //        else
+        //        {
+        //            TempData["errorMessage"] = "Error al intentar registrar el nuevo empleado";
+        //            return View();
+        //        }
+
+        //    }return View(employees);
+        //}
+
         [HttpPost]
         public async Task<IActionResult> Create(Employees employees)
         {
             if (ModelState.IsValid)
             {
-                var nationalIdTypes = await GetNationalIdTypes();
-                ViewBag.NationalIdTypes = new SelectList(nationalIdTypes, "IdType", "Name");
-                var jobTitles = await GetJobTitles();
-                ViewBag.JobTitles = new SelectList(jobTitles, "IdJobTitle", "Name");
                 string data = JsonConvert.SerializeObject(employees);
                 StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
                 HttpResponseMessage response = _client.PostAsync($"{_client.BaseAddress}/Employees", content).Result;
 
                 if (response.IsSuccessStatusCode)
                 {
+
                     TempData["successMessage"] = "Nuevo Empleado Registrado";
                     return RedirectToAction("Index");
                 }
@@ -113,7 +137,18 @@ namespace GrupoBLEficiente.Controllers
                     TempData["errorMessage"] = "Error al intentar registrar el nuevo empleado";
                     return View();
                 }
-            }return View(employees);
+
+            }
+            else
+            {
+       
+                var nationalIdTypes = await GetNationalIdTypes();
+                ViewBag.NationalIdTypes = new SelectList(nationalIdTypes, "IdType", "Name");
+                var jobTitles = await GetJobTitles();
+                ViewBag.JobTitles = new SelectList(jobTitles, "IdJobTitle", "Name");
+
+                return View(employees);
+            }
         }
 
         [HttpGet]

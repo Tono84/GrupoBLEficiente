@@ -15,6 +15,10 @@ namespace GrupoBLEficienteAPI.Models
 
         public DbSet<JobTitles> JobTitles { get; set; }
 
+        public DbSet<Roles> Roles { get; set; }
+
+        public DbSet<Users> Users { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Employees>(Employees =>
@@ -51,40 +55,29 @@ namespace GrupoBLEficienteAPI.Models
                 .HasMaxLength(200)
                 .IsUnicode(true);
             });
-            //modelBuilder.Entity<Roles>(Roles =>
-            //{
-            //    Roles.HasKey(x => x.IdRol);
-            //    Roles.Property(x => x.Description)
-            //    .IsRequired().HasMaxLength(200);
-            //    Roles.Property(x => x.Name)
-            //    .IsRequired().HasMaxLength(200);
-            //});
-            //modelBuilder.Entity<Attendance>(Attendance =>
-            //{
-            //    Attendance.HasKey(x => x.IdAttendance);
-            //    Attendance.Property(x => x.Description)
-            //    .IsRequired().HasMaxLength(200);
-            //});
-            //modelBuilder.Entity<CCSSDeductions>(CCSSDeductions =>
-            //{
-            //    CCSSDeductions.HasKey(x => x.IdCCSSDeduction);
-            //    CCSSDeductions.Property(x => x.Description)
-            //    .IsRequired().HasMaxLength(200);
-            //});
-            //modelBuilder.Entity<TaxDeduction>(TaxDeduction =>
-            //{
-            //    TaxDeduction.HasKey(x => x.IdTaxDeduction);
-            //    TaxDeduction.Property(x => x.Description)
-            //    .IsRequired().HasMaxLength(200);
-            //});
-            //modelBuilder.Entity<Paysheet>(Paysheet =>
-            //{
-            //    Paysheet.HasKey(x => x.IdPaysheet);
-            //    Paysheet.Property(x => x.Description)
-            //    .IsRequired().HasMaxLength(200);
-            //});
+            modelBuilder.Entity<Roles>(Roles =>
+            {
+                Roles.HasKey(x => x.IdRol);
+                Roles.Property(x => x.Description)
+                .IsRequired().HasMaxLength(200);
+                Roles.Property(x => x.Name)
+                .IsRequired().HasMaxLength(200);
+            });
+
+            modelBuilder.Entity<Users>(Users =>
+            {
+                Users.HasKey(x => x.IdUser);
+                Users.Property(x => x.Password)
+                .IsRequired()
+                .HasMaxLength(500)
+                .IsUnicode(true);
+            });
+
             modelBuilder.Entity<Employees>().HasOne(x => x.NationalIdTypes).WithMany(x => x.Employees).HasForeignKey(f => f.IdType);
             modelBuilder.Entity<Employees>().HasOne(x => x.JobTitles).WithMany(x => x.Employees).HasForeignKey(f => f.IdJobTitle);
+            modelBuilder.Entity<Users>().HasOne(x => x.Employees).WithOne(x => x.Users).HasForeignKey<Users>(f => f.IdEmployee);
+            modelBuilder.Entity<Users>().HasOne(x => x.Roles).WithMany(x => x.Users).HasForeignKey(f => f.IdRol);
+
         }
     }
 }

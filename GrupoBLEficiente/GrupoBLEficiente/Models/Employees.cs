@@ -1,6 +1,4 @@
-﻿
-using Microsoft.SqlServer.Server;
-using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json.Linq;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
@@ -67,8 +65,12 @@ namespace GrupoBLEficiente.Models
 
         [JsonIgnore]
         public NationalIdTypes? NationalIdTypes { get; set; }
+
         [JsonIgnore]
         public JobTitles? JobTitles { get; set; }
+
+        [JsonIgnore]
+        public Users? Users { get; set; }
     }
     
 }

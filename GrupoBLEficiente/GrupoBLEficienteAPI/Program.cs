@@ -2,19 +2,20 @@ using Microsoft.EntityFrameworkCore;
 using GrupoBLEficienteAPI.Controllers;
 using GrupoBLEficienteAPI.Models;
 using Microsoft.Extensions.Configuration;
+using GrupoBLEficienteAPI.Services.Contract;
+using GrupoBLEficienteAPI.Services.Implementation;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<GrupoBLEficienteAPI.Models.GBLContext>(opciones => opciones.UseSqlServer(builder.Configuration.GetConnectionString("GBLContext")));
-//builder.Services.AddDbContext<IdContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("IdContext")));
-//builder.Services.AddAuthorization();
-//builder.Services.AddIdentityApiEndpoints<Users>().AddEntityFrameworkStores<IdContext>();
+
+builder.Services.AddScoped<IUserService, UserService>();
 
 var app = builder.Build();
 

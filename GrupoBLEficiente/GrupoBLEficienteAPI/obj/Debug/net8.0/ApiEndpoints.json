@@ -1,5 +1,52 @@
 [
   {
+    "ContainingType": "GrupoBLEficienteAPI.Controllers.AuthorizationController",
+    "Method": "Register",
+    "RelativePath": "api/Authorization",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GrupoBLEficienteAPI.Controllers.AuthorizationController",
+    "Method": "Register",
+    "RelativePath": "api/Authorization",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Model",
+        "Type": "GrupoBLEficienteAPI.Models.Users",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GrupoBLEficienteAPI.Controllers.AuthorizationController",
+    "Method": "LoginUser",
+    "RelativePath": "api/Authorization/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "GrupoBLEficienteAPI.Controllers.EmployeesController",
     "Method": "GetEmployees",
     "RelativePath": "api/Employees",

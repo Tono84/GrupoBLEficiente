@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3AEDFA60-FB34-473D-A0FB-86E011AADD59}|GrupoBLEficienteAPI\\GrupoBLEficienteAPI.csproj|c:\\users\\joses\\onedrive\\documentos\\source\\repos\\grupobleficiente\\grupobleficiente\\grupobleficienteapi\\models\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AEDFA60-FB34-473D-A0FB-86E011AADD59}|GrupoBLEficienteAPI\\GrupoBLEficienteAPI.csproj|solutionrelative:grupobleficienteapi\\models\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AEDFA60-FB34-473D-A0FB-86E011AADD59}|GrupoBLEficienteAPI\\GrupoBLEficienteAPI.csproj|c:\\users\\joses\\onedrive\\documentos\\source\\repos\\grupobleficiente\\grupobleficiente\\grupobleficienteapi\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AEDFA60-FB34-473D-A0FB-86E011AADD59}|GrupoBLEficienteAPI\\GrupoBLEficienteAPI.csproj|solutionrelative:grupobleficienteapi\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BF9551D-F7F6-4E1C-9656-A7DD700B10FC}|GrupoBLEficiente\\GrupoBLEficiente.csproj|c:\\users\\joses\\onedrive\\documentos\\source\\repos\\grupobleficiente\\grupobleficiente\\grupobleficiente\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BF9551D-F7F6-4E1C-9656-A7DD700B10FC}|GrupoBLEficiente\\GrupoBLEficiente.csproj|solutionrelative:grupobleficiente\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AEDFA60-FB34-473D-A0FB-86E011AADD59}|GrupoBLEficienteAPI\\GrupoBLEficienteAPI.csproj|c:\\users\\joses\\onedrive\\documentos\\source\\repos\\grupobleficiente\\grupobleficiente\\grupobleficienteapi\\controllers\\authorizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AEDFA60-FB34-473D-A0FB-86E011AADD59}|GrupoBLEficienteAPI\\GrupoBLEficienteAPI.csproj|solutionrelative:grupobleficienteapi\\controllers\\authorizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AEDFA60-FB34-473D-A0FB-86E011AADD59}|GrupoBLEficienteAPI\\GrupoBLEficienteAPI.csproj|c:\\users\\joses\\onedrive\\documentos\\source\\repos\\grupobleficiente\\grupobleficiente\\grupobleficienteapi\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AEDFA60-FB34-473D-A0FB-86E011AADD59}|GrupoBLEficienteAPI\\GrupoBLEficienteAPI.csproj|solutionrelative:grupobleficienteapi\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AEDFA60-FB34-473D-A0FB-86E011AADD59}|GrupoBLEficienteAPI\\GrupoBLEficienteAPI.csproj|c:\\users\\joses\\onedrive\\documentos\\source\\repos\\grupobleficiente\\grupobleficiente\\grupobleficienteapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AEDFA60-FB34-473D-A0FB-86E011AADD59}|GrupoBLEficienteAPI\\GrupoBLEficienteAPI.csproj|solutionrelative:grupobleficienteapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AEDFA60-FB34-473D-A0FB-86E011AADD59}|GrupoBLEficienteAPI\\GrupoBLEficienteAPI.csproj|c:\\users\\joses\\onedrive\\documentos\\source\\repos\\grupobleficiente\\grupobleficiente\\grupobleficienteapi\\services\\implementation\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AEDFA60-FB34-473D-A0FB-86E011AADD59}|GrupoBLEficienteAPI\\GrupoBLEficienteAPI.csproj|solutionrelative:grupobleficienteapi\\services\\implementation\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AEDFA60-FB34-473D-A0FB-86E011AADD59}|GrupoBLEficienteAPI\\GrupoBLEficienteAPI.csproj|c:\\users\\joses\\onedrive\\documentos\\source\\repos\\grupobleficiente\\grupobleficiente\\grupobleficienteapi\\helpers\\utilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AEDFA60-FB34-473D-A0FB-86E011AADD59}|GrupoBLEficienteAPI\\GrupoBLEficienteAPI.csproj|solutionrelative:grupobleficienteapi\\helpers\\utilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AEDFA60-FB34-473D-A0FB-86E011AADD59}|GrupoBLEficienteAPI\\GrupoBLEficienteAPI.csproj|c:\\users\\joses\\onedrive\\documentos\\source\\repos\\grupobleficiente\\grupobleficiente\\grupobleficienteapi\\services\\contract\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AEDFA60-FB34-473D-A0FB-86E011AADD59}|GrupoBLEficienteAPI\\GrupoBLEficienteAPI.csproj|solutionrelative:grupobleficienteapi\\services\\contract\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficiente\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "GrupoBLEficiente\\Models\\Users.cs",
+              "ToolTip": "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficiente\\Models\\Users.cs",
+              "RelativeToolTip": "GrupoBLEficiente\\Models\\Users.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T01:11:03.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthorizationController.cs",
+              "DocumentMoniker": "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficienteAPI\\Controllers\\AuthorizationController.cs",
+              "RelativeDocumentMoniker": "GrupoBLEficienteAPI\\Controllers\\AuthorizationController.cs",
+              "ToolTip": "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficienteAPI\\Controllers\\AuthorizationController.cs",
+              "RelativeToolTip": "GrupoBLEficienteAPI\\Controllers\\AuthorizationController.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAwD0AAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T19:50:19.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficienteAPI\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "GrupoBLEficienteAPI\\Controllers\\EmployeesController.cs",
+              "ToolTip": "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficienteAPI\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "GrupoBLEficienteAPI\\Controllers\\EmployeesController.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAQwGoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T19:40:43.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficienteAPI\\Program.cs",
+              "RelativeDocumentMoniker": "GrupoBLEficienteAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficienteAPI\\Program.cs",
+              "RelativeToolTip": "GrupoBLEficienteAPI\\Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T18:58:15.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficienteAPI\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "GrupoBLEficienteAPI\\Models\\Users.cs",
+              "ToolTip": "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficienteAPI\\Models\\Users.cs",
+              "RelativeToolTip": "GrupoBLEficienteAPI\\Models\\Users.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T18:57:32.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficienteAPI\\Services\\Implementation\\UserService.cs",
+              "RelativeDocumentMoniker": "GrupoBLEficienteAPI\\Services\\Implementation\\UserService.cs",
+              "ToolTip": "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficienteAPI\\Services\\Implementation\\UserService.cs",
+              "RelativeToolTip": "GrupoBLEficienteAPI\\Services\\Implementation\\UserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T18:12:44.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Context.cs",
+              "DocumentMoniker": "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficienteAPI\\Models\\Context.cs",
+              "RelativeDocumentMoniker": "GrupoBLEficienteAPI\\Models\\Context.cs",
+              "ToolTip": "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficienteAPI\\Models\\Context.cs",
+              "RelativeToolTip": "GrupoBLEficienteAPI\\Models\\Context.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T18:05:20.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficienteAPI\\Services\\Contract\\IUserService.cs",
+              "RelativeDocumentMoniker": "GrupoBLEficienteAPI\\Services\\Contract\\IUserService.cs",
+              "ToolTip": "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficienteAPI\\Services\\Contract\\IUserService.cs",
+              "RelativeToolTip": "GrupoBLEficienteAPI\\Services\\Contract\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T17:51:52.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Utilities.cs",
+              "DocumentMoniker": "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficienteAPI\\Helpers\\Utilities.cs",
+              "RelativeDocumentMoniker": "GrupoBLEficienteAPI\\Helpers\\Utilities.cs",
+              "ToolTip": "C:\\Users\\joses\\OneDrive\\Documentos\\source\\repos\\GrupoBLEficiente\\GrupoBLEficiente\\GrupoBLEficienteAPI\\Helpers\\Utilities.cs",
+              "RelativeToolTip": "GrupoBLEficienteAPI\\Helpers\\Utilities.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T17:48:36.008Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

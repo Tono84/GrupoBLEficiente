@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace GrupoBLEficiente.Models
 {
@@ -15,8 +16,8 @@ namespace GrupoBLEficiente.Models
         [Display(Name = "Descripción")]
         public string Description { get; set; }
 
-
-     public List<Employees>? Employees { get; set; }
+        [JsonIgnore]
+        public List<Users>? Users { get; set; }
 
     }
 }
